@@ -1,0 +1,78 @@
+* {
+    font: "JetBrains Mono 12";
+    background: #2d353b;
+    background-alt: #475258;
+    foreground: #d3c6aa;
+    selected: #7fbbb3;
+    urgent: #e67e80;
+}
+
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    drun-display-format: "{name}";
+    sort: true;
+}
+
+window {
+    width: 40%;
+    height: 60%;
+    border-radius: 12;
+    background-color: @background;
+    border: 2px;
+    border-color: @selected;
+}
+
+inputbar {
+    padding: 12;
+    spacing: 8;
+    background-color: @background-alt;
+    border-radius: 8;
+    margin: 12;
+    children: [entry, num-filtered-rows, case-indicator];
+}
+
+entry {
+    font: "JetBrains Mono 12";
+    foreground: @foreground;
+    background-color: transparent;
+    placeholder: "Search";
+    placeholder-color: #6a7a7c;
+}
+
+listview {
+    columns: 1;
+    lines: 8;
+    cycle: true;
+    dynamic: true;
+    spacing: 2;
+    padding: 8;
+}
+
+element {
+    padding: 8;
+    border-radius: 6;
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element selected {
+    background-color: @selected;
+    text-color: #2d353b;
+}
+
+element normal {
+    background-color: transparent;
+}
+
+element urgent {
+    background-color: @urgent;
+    text-color: #2d353b;
+}
+
+element-icon {
+    size: 0;
+}
+
+@theme "/usr/share/rofi/themes/DarkBlue.rasi"

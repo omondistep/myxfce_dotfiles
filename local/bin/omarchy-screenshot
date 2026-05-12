@@ -1,0 +1,19 @@
+#!/bin/bash
+case "$1" in
+    region)
+        maim -s -u ~/Pictures/screenshot-$(date +%s).png
+        ;;
+    full)
+        maim ~/Pictures/screenshot-$(date +%s).png
+        ;;
+    window)
+        maim -i $(xdotool getactivewindow) ~/Pictures/screenshot-$(date +%s).png
+        ;;
+    clipboard)
+        maim -s -u | xclip -selection clipboard -t image/png
+        ;;
+    *)
+        echo "Usage: $(basename $0) {region|full|window|clipboard}"
+        exit 1
+        ;;
+esac

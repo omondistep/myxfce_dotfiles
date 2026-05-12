@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+entries=" Lock\n Logout\n Reboot\n Shutdown\n Suspend"
+
+selected=$(echo -e "$entries" | rofi -dmenu -p "Power" -theme-str 'window {width: 200px;} listview {lines: 5;}')
+
+case "$selected" in
+    *Lock)
+        xflock4
+        ;;
+    *Logout)
+        xfce4-session-logout --logout
+        ;;
+    *Reboot)
+        systemctl reboot
+        ;;
+    *Shutdown)
+        systemctl poweroff
+        ;;
+    *Suspend)
+        systemctl suspend
+        ;;
+esac

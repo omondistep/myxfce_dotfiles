@@ -1,0 +1,24 @@
+.xfce4-panel {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: rgba(30, 30, 30, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Make panel buttons slightly rounded and more modern */
+#tasklist-button, .tasklist-button, .button {
+    border-radius: 6px;
+    margin: 2px 4px;
+    transition: all 0.2s ease;
+}
+
+#tasklist-button:hover, .tasklist-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Clock and other plugins */
+#clock-button {
+    font-weight: bold;
+    color: #3498db;
+}

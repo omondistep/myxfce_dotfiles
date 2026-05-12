@@ -1,0 +1,23 @@
+"rofi -show drun"
+    Mod4 + space
+
+"/home/stdk/.local/bin/omarchy-keybinds"
+    Mod4 + F1
+
+"/home/stdk/.local/bin/omarchy-powermenu"
+    Mod4 + x
+
+"/home/stdk/.local/bin/omarchy-screenshot region"
+    Print
+
+"/home/stdk/.local/bin/omarchy-screenshot full"
+    Mod4 + Print
+
+"/home/stdk/.local/bin/omarchy-screenshot window"
+    Control + Print
+
+"/home/stdk/.local/bin/omarchy-screenshot clipboard"
+    Shift + Print
+
+"alacritty -e ranger"
+    Mod4 + Shift + r
