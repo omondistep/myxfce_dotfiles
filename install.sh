@@ -43,7 +43,7 @@ install_arch() {
     polybar rofi xbindkeys alacritty foot \
     ttf-jetbrains-mono-nerd papirus-icon-theme \
     starship maim xclip pavucontrol ranger \
-    xfce4-clipman-plugin
+    xfce4-clipman-plugin chromium surf
 }
 
 install_debian() {
@@ -53,6 +53,7 @@ install_debian() {
     papirus-icon-theme fonts-jetbrains-mono \
     starship foot \
     maim xclip pavucontrol ranger xfce4-clipman-plugin \
+    chromium-browser surf \
     curl git unzip
   # Remove bloat
   $SUDO apt purge -y tumbler libreoffice* firefox* 2>/dev/null || true

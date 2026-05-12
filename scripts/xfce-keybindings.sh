@@ -15,13 +15,13 @@ xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Super>h" -t st
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Super>l" -t string -s "xflock4"
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Super>p" -t string -s "xfce4-display-settings --minimal"
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Super>Return" -t string -s "alacritty"
-xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Super><Shift>b" -t string -s "exo-open --launch WebBrowser"
+xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Super><Shift>b" -t string -s "chromium"
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Super><Shift>f" -t string -s "exo-open --launch FileManager"
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Super><Shift>n" -t string -s "alacritty -e nvim"
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Super>Space" -t string -s "rofi -show drun"
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/XF86Display" -t string -s "xfce4-display-settings --minimal"
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/XF86Mail" -t string -s "exo-open --launch MailReader"
-xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/XF86WWW" -t string -s "exo-open --launch WebBrowser"
+xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/XF86WWW" -t string -s "chromium"
 
 # Restore xfwm4 custom keybindings
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/xfwm4/custom/<Alt>Delete" -t string -s "del_workspace_key"
