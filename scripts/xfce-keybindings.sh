@@ -5,7 +5,7 @@ xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Alt>F2" -t str
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Alt>F3" -t string -s "xfce4-appfinder"
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Primary><Alt>Delete" -t string -s "xfce4-session-logout"
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Primary><Alt>o" -t string -s "onboard"
-xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Primary><Alt>t" -t string -s "x-terminal-emulator -t "Command Line""
+xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Primary><Alt>t" -t string -s "x-terminal-emulator -t 'Command Line'"
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Primary>Escape" -t string -s "xfdesktop --menu"
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Primary><Shift>Escape" -t string -s "/usr/bin/system-monitoring-center"
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/Print" -t string -s "xfce4-screenshooter"
@@ -22,6 +22,8 @@ xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Super>Space" -
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/XF86Display" -t string -s "xfce4-display-settings --minimal"
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/XF86Mail" -t string -s "exo-open --launch MailReader"
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/XF86WWW" -t string -s "chromium"
+xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Super>Escape" -t string -s "xflock4"
+xfconf-query -c xfce4-keyboard-shortcuts -n -p "/commands/custom/<Super><Shift>c" -t string -s "alacritty -e nvim ~/.config/alacritty/alacritty.toml"
 
 # Restore xfwm4 custom keybindings
 xfconf-query -c xfce4-keyboard-shortcuts -n -p "/xfwm4/custom/<Alt>Delete" -t string -s "del_workspace_key"

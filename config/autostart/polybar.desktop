@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=Polybar
-Comment=Lightweight top bar
-Exec=/home/stdk/.config/polybar/launch.sh
+Comment=Lightweight top bar with services
+Exec=~/.config/polybar/launch.sh
 X-GNOME-Autostart-enabled=true

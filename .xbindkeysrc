@@ -1,23 +1,54 @@
 "rofi -show drun"
     Mod4 + space
 
-"/home/stdk/.local/bin/omarchy-keybinds"
+"~/.local/bin/omarchy-keybinds"
     Mod4 + F1
 
-"/home/stdk/.local/bin/omarchy-powermenu"
+"~/.local/bin/omarchy-powermenu"
     Mod4 + x
 
-"/home/stdk/.local/bin/omarchy-screenshot region"
+"~/.local/bin/omarchy-screenshot region"
     Print
 
-"/home/stdk/.local/bin/omarchy-screenshot full"
+"~/.local/bin/omarchy-screenshot full"
     Mod4 + Print
 
-"/home/stdk/.local/bin/omarchy-screenshot window"
+"~/.local/bin/omarchy-screenshot window"
     Control + Print
 
-"/home/stdk/.local/bin/omarchy-screenshot clipboard"
+"~/.local/bin/omarchy-screenshot clipboard"
     Shift + Print
 
 "alacritty -e ranger"
     Mod4 + Shift + r
+
+# Volume keys
+"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    XF86AudioMute
+
+"pactl set-sink-volume @DEFAULT_SINK@ -5%"
+    XF86AudioLowerVolume
+
+"pactl set-sink-volume @DEFAULT_SINK@ +5%"
+    XF86AudioRaiseVolume
+
+# Media keys
+"playerctl play-pause"
+    XF86AudioPlay
+
+"playerctl next"
+    XF86AudioNext
+
+"playerctl previous"
+    XF86AudioPrev
+
+# Brightness (if available)
+"brightnessctl set 5%-"
+    XF86MonBrightnessDown
+
+"brightnessctl set 5%+"
+    XF86MonBrightnessUp
+
+# Lock screen
+"xflock4"
+    Mod4 + Escape

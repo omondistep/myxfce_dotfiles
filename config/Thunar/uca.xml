@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+  <action>
+    <icon>terminal</icon>
+    <name>Open Terminal Here</name>
+    <submenu></submenu>
+    <unique-id>1712345678-1</unique-id>
+    <command>alacritty --working-directory %f</command>
+    <description></description>
+    <range></range>
+    <patterns>*</patterns>
+    <startup-notify>false</startup-notify>
+    <directories>true</directories>
+  </action>
+  <action>
+    <icon>nvim</icon>
+    <name>Open with Neovim</name>
+    <submenu></submenu>
+    <unique-id>1712345678-2</unique-id>
+    <command>alacritty -e nvim %f</command>
+    <description></description>
+    <range></range>
+    <patterns>*</patterns>
+    <startup-notify>false</startup-notify>
+    <directories>false</directories>
+  </action>
+  <action>
+    <icon>utilities-terminal</icon>
+    <name>Open as Root</name>
+    <submenu></submenu>
+    <unique-id>1712345678-3</unique-id>
+    <command>pkexec alacritty --working-directory %f</command>
+    <description></description>
+    <range></range>
+    <patterns>*</patterns>
+    <startup-notify>false</startup-notify>
+    <directories>true</directories>
+  </action>
+  <action>
+    <icon>accessories-archive</icon>
+    <name>Extract Here</name>
+    <submenu></submenu>
+    <unique-id>1712345678-4</unique-id>
+    <command>7z x %f || unzip %f || tar xvf %f</command>
+    <description></description>
+    <range></range>
+    <patterns>*.zip;*.tar;*.tar.gz;*.tgz;*.tar.bz2;*.tbz2;*.tar.xz;*.7z;*.rar</patterns>
+    <startup-notify>true</startup-notify>
+    <directories>false</directories>
+  </action>
+</actions>

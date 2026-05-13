@@ -1,16 +1,21 @@
 #!/bin/bash
+mkdir -p ~/Pictures
 case "$1" in
     region)
         maim -s -u ~/Pictures/screenshot-$(date +%s).png
+        notify-send "Screenshot saved" "Region captured"
         ;;
     full)
         maim ~/Pictures/screenshot-$(date +%s).png
+        notify-send "Screenshot saved" "Full screen captured"
         ;;
     window)
         maim -i $(xdotool getactivewindow) ~/Pictures/screenshot-$(date +%s).png
+        notify-send "Screenshot saved" "Window captured"
         ;;
     clipboard)
         maim -s -u | xclip -selection clipboard -t image/png
+        notify-send "Screenshot copied" "Region copied to clipboard"
         ;;
     *)
         echo "Usage: $(basename $0) {region|full|window|clipboard}"

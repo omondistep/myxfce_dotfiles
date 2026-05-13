@@ -6,7 +6,11 @@ selected=$(echo -e "$entries" | rofi -dmenu -p "Power" -theme-str 'window {width
 
 case "$selected" in
     *Lock)
-        xflock4
+        if command -v i3lock &>/dev/null; then
+            i3lock -c 2d353b
+        else
+            xflock4
+        fi
         ;;
     *Logout)
         xfce4-session-logout --logout

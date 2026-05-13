@@ -1,0 +1,12 @@
+[Configuration]
+favorites-categories-hidden=false
+position-categories=true
+position-search=true
+last-category=0
+recent-items-max=10
+view-mode=0
+icon-size=32
+menu-icon=application-menu
+show-favorites=true
+show-recents=true
+show-first=true
